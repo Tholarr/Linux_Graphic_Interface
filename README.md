@@ -11,6 +11,7 @@ This project is being carried out in parallel with my 2nd year work at Epitech.
 | Main menu                         |       | x     |      |
 | File storage                      | x     |       |      |
 | File explorer                     | x     |       |      |
+| Time display                      | x     |       |      |
 | Obtaining access to the web       | x     |       |      |
 | Open a terminal                   | x     |       |      |
 | Run commands in the terminal      | x     |       |      |
