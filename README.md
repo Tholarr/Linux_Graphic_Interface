@@ -17,6 +17,7 @@ This project is being carried out in parallel with my 2nd year work at Epitech.
 | Run commands in the terminal      | x     |       |      |
 | Open an ide                       | x     |       |      |
 | User customisation of the visual  | x     |       |      |
+| Sessions system                   | x     |       |      |
 | Unlocking with a password         | x     |       |      |
 | Mascot interactions               | x     |       |      |
 
