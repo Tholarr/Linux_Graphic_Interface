@@ -1,0 +1,43 @@
+#include <SFML/Graphics.hpp>
+
+sf::RenderWindow window(sf::VideoMode(1920, 1080), "Graphic Interface");
+
+int main() {
+
+    sf::Vector2f squareSize(200.f, 200.f);
+    sf::Vector2f squarePosition(0.f, window.getSize().y / 2.f - squareSize.y / 2.f);
+
+    sf::RectangleShape square(squareSize);
+    square.setPosition(squarePosition);
+    square.setFillColor(sf::Color(100, 100, 100));
+
+    bool squareVisible = false;
+    bool MenuIsMoving = false;
+
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window.close();
+            if (event.type == sf::Event::KeyPressed) {
+                if (event.key.code == sf::Keyboard::Space) {
+                    MenuIsMoving = !MenuIsMoving;
+                }
+            }
+        }
+
+        if (MenuIsMoving && squarePosition.x < 100) {
+            squarePosition.x += 1;
+            square.setPosition(squarePosition);
+        } else if (!MenuIsMoving && squarePosition.x > 0) {
+            squarePosition.x -= 1;
+            square.setPosition(squarePosition);
+        }
+
+        window.clear(sf::Color::Black);
+        window.draw(square);
+        window.display();
+    }
+
+    return 0;
+}
