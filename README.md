@@ -1,1 +1,1 @@
-# Linux_Graphique_Interface
+# Linux_Graphic_Interface
