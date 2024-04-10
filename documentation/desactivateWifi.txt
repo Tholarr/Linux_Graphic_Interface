@@ -1,0 +1,15 @@
+#include <cstdlib>
+#include <cstring>
+
+char password[100];
+std::cout << "Enter password : ";
+std::cin.getline(password, 100);
+
+char command[200];
+strcpy(command, "echo '");
+strcat(command, password);
+strcat(command, "' | sudo -S nmcli radio wifi off");
+
+system(command);
+std::cout << "WiFi désactivé." << std::endl;
+
