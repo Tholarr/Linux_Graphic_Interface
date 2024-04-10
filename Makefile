@@ -8,7 +8,8 @@ NAME = LGI
 SFML = -lsfml-graphics -lsfml-system -lsfml-audio -lsfml-window
 
 SRC = 	src/Main.cpp \
-		src/MainMenu.cpp
+		src/MainMenu.cpp \
+		src/LockPage.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
