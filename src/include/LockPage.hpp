@@ -12,7 +12,7 @@
 
 class LockPage {
     public:
-        LockPage();
+        LockPage(sf::RenderWindow &window);
         ~LockPage();
 
         void lock();
@@ -23,11 +23,11 @@ class LockPage {
         void updateEnteredPassord();
 
         std::string enteredPassword_;
+        sf::RectangleShape passwordBox_;
     protected:
 
     private:
         bool isLocked_;
-        sf::Text lockText_;
         sf::Text enteredText_;
         sf::Font font_;
         sf::RectangleShape lockBackground_;
