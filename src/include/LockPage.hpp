@@ -11,22 +11,27 @@
 #include <SFML/Graphics.hpp>
 
 class LockPage {
-public:
-    LockPage();
-    ~LockPage();
+    public:
+        LockPage();
+        ~LockPage();
 
-    void lock();
-    void unlock();
-    bool isLocked() const { return isLocked_; }
+        void lock();
+        void unlock();
+        bool isLocked() const { return isLocked_; }
 
-    void drawLockPage(sf::RenderWindow &window);
+        void drawLockPage(sf::RenderWindow &window);
+        void updateEnteredPassord();
 
-private:
-    bool isLocked_;
-    sf::Text lockText_;
-    sf::Font font_;
-    sf::RectangleShape lockBackground_;
-    sf::Texture lockTexture_;
+        std::string enteredPassword_;
+    protected:
+
+    private:
+        bool isLocked_;
+        sf::Text lockText_;
+        sf::Text enteredText_;
+        sf::Font font_;
+        sf::RectangleShape lockBackground_;
+        sf::Texture lockTexture_;
 };
 
 #endif /* !LOCKPAGE_HPP_ */

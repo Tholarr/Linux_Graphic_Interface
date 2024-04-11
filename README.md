@@ -18,7 +18,7 @@ This project is being carried out in parallel with my 2nd year work at Epitech.
 | Open an ide                       | x     |       |      |
 | User customisation of the visual  | x     |       |      |
 | Sessions system                   |       | x     |      |
-| Unlocking with a password         |       | x     |      |
+| Unlocking with a password         |       |       | x    |
 | Mascot interactions               | x     |       |      |
 
 Thomas Cluseau | 
